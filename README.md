@@ -1,7 +1,3 @@
----
-title: Home
----
-
 # Software Development ePortfolio
 
 

@@ -1,17 +1,26 @@
 ---
 ---
 
-@import "{{ site.theme }}";  // Load Hacker theme first
+@import "{{ site.theme }}"; // Load Hacker theme first
 
 // Define the font using @font-face
 @font-face {
   font-family: 'Share Tech Mono';
-  src: url('assets/fonts/ShareTechMono-Regular.ttf') format('truetype');
+  src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-// Apply your font globally
-body {
-  font-family: 'Share Tech Mono', monospace;
+// Apply font globally across key elements
+body,
+h1, h2, h3, h4, h5, h6,
+a, nav, button, code, pre,
+.btn, .container, header, section,
+.site-title, .site-header, .site-footer {
+  font-family: 'Share Tech Mono', monospace !important;
+}
+
+// Remove the './' before the site title added by the Hacker theme
+#a-title::before {
+  content: none !important;
 }

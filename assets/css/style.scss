@@ -1,6 +1,10 @@
 ---
 ---
+#a-title::before {
+  content: none !important;
+}
 
+@import "{{ site.theme }}";
 // Define the font using @font-face
 @font-face {
   font-family: 'Share Tech Mono';

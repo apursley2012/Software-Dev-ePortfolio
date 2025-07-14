@@ -1,9 +1,17 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import "{{ site.theme }}";  // Load Hacker theme first
 
+// Define the font using @font-face
+@font-face {
+  font-family: 'Share Tech Mono';
+  src: url('assets/fonts/ShareTechMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Apply your font globally
 body {
   font-family: 'Share Tech Mono', monospace;
 }

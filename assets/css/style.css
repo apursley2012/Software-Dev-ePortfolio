@@ -1,54 +1,77 @@
-@font-face {
-  font-family: 'Share Tech Mono';
-  src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
+/* Global Layout */
 body {
-  background-color: #0d0d0d;
+  background-color: #1e1e1e; /* dark charcoal gray */
   color: white;
   font-family: 'Share Tech Mono', monospace;
   margin: 0;
-  padding: 0 1.5em;
+  padding: 0 1rem;
 }
 
-a {
-  color: #66ff66;
-  text-decoration: none;
+/* Page Title Section */
+.page-header {
+  text-align: center;
+  margin: 3rem auto;
 }
 
-a:hover {
-  text-decoration: underline;
+.page-header h1 {
+  color: #39ff14;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
 }
 
-h1, h2, h3 {
-  color: #ffffff;
+.page-header p {
+  color: #39ff14;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  text-shadow: 0 0 3px #39ff14;
+  margin-top: 0.5rem;
 }
 
-header.site-header {
-  padding: 1em 0;
-  border-bottom: 1px solid #333;
-}
-
-nav.top-nav ul {
-  list-style: none;
-  padding: 0;
+/* Navigation Bar */
+nav {
+  background-color: #121212;
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  justify-content: center;
+  padding: 0.5rem;
+  border-bottom: 2px solid #39ff14;
 }
 
-nav.top-nav a {
-  color: #66ff66;
-  font-weight: bold;
+nav a {
+  color: #39ff14;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: text-shadow 0.3s;
 }
 
-footer.site-footer {
+nav a:hover {
+  text-shadow: 0 0 6px #39ff14;
+}
+
+/* Body Content */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Coming Soon Fun Text */
+.coming-soon {
+  font-style: italic;
+  color: #cccccc;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Footer Styling */
+footer {
+  border-top: 1px solid #444;
+  margin-top: 3rem;
+  padding: 1rem 0;
   text-align: center;
-  margin-top: 2em;
-  padding: 1em 0;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: #888;
-  border-top: 1px solid #333;
 }

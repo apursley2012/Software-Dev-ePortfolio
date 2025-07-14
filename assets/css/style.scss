@@ -22,7 +22,3 @@ a, nav, button, code, pre,
   font-family: 'Share Tech Mono', monospace !important;
 }
 
-// Remove the './' before the site title added by the Hacker theme
-#a-title::before {
-  content: none !important;
-}

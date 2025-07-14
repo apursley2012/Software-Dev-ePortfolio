@@ -3,5 +3,7 @@ description: Welcome to My Software Development ePortfolio
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-themep
+github:
+  is_project_page: false
 markdown: kramdown
 permalink: pretty

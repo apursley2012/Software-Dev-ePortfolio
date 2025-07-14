@@ -86,15 +86,7 @@ body {
     0 0 20px #00ff99;
 }
 
-/* Main content */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* --- Terminal Card/Window Style Additions --- */
-
+/* Terminal window block (index.md) */
 .terminal-window {
   background-color: #1e1e1e;
   border-radius: 5px;

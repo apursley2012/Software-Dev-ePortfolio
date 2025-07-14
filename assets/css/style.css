@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: '256 Bytes';
-  src: url('../fonts/256Bytes.ttf') format('truetype');
+  src: url('../fonts/256Bytes.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }

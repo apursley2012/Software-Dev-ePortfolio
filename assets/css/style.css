@@ -1,4 +1,4 @@
-/* Load custom font */
+/* Import Share Tech Mono font */
 @font-face {
   font-family: 'Share Tech Mono';
   src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype');
@@ -6,17 +6,63 @@
   font-style: normal;
 }
 
-/* Apply font across entire site */
-body,
-h1, h2, h3, h4, h5, h6,
-a, nav, button, code, pre,
-.btn, .container, header, section,
-.site-title, .site-header, .site-footer {
-  font-family: 'Share Tech Mono', monospace !important;
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Remove unwanted `./` before site title */
-#a-title::before,
-h1::before {
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #0a0a0a; /* Same dark charcoal gray as the Hacker theme */
+  color: #ccff00;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a, a:visited {
+  color: #ccff00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ccff00;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Button style for GitHub button */
+.btn, .btn-github {
+  background: none;
+  border: 2px solid #ccff00;
+  color: #ccff00;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0.5rem 0;
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+}
+
+.btn:hover, .btn-github:hover {
+  background: #ccff00;
+  color: #0a0a0a;
+}
+
+/* Remove ./ prefix from title */
+#a-title::before {
   content: none !important;
 }

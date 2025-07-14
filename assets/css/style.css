@@ -1,6 +1,4 @@
----
----
-
+/* Load custom font */
 @font-face {
   font-family: 'Share Tech Mono';
   src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype');
@@ -8,18 +6,17 @@
   font-style: normal;
 }
 
-/* Remove the './' from Hacker theme before the title */
-#a-title::before {
-  content: none !important;
-}
-
-@import "{{ site.theme }}";
-
-/* Apply font globally */
+/* Apply font across entire site */
 body,
 h1, h2, h3, h4, h5, h6,
 a, nav, button, code, pre,
 .btn, .container, header, section,
 .site-title, .site-header, .site-footer {
   font-family: 'Share Tech Mono', monospace !important;
+}
+
+/* Remove unwanted `./` before site title */
+#a-title::before,
+h1::before {
+  content: none !important;
 }

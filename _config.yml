@@ -1,6 +1,5 @@
 title: Software Development ePortfolio
 description: Welcome to My Software Development ePortfolio
 theme: null
-
-plugins:
-  - jekyll-seo-tag
+markdown: kramdown
+permalink: pretty

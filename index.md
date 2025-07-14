@@ -9,19 +9,6 @@ This is my Software Development ePortfolio site. Here you will find the projects
 ### **More content coming soon!**
 
 ---
----
-layout: default
-title: Software Development ePortfolio
----
-
-# Software Development ePortfolio
-
-## Welcome to My Software Development ePortfolio
-
-This is my Software Development ePortfolio site. Here you will find the projects and enhancements I have created while working toward my CS bachelor’s in Software Development.
-
----
-
 <div class="terminal-window">
   <div class="terminal-header">
     <span class="red-dot"></span>

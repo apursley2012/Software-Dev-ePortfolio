@@ -1,68 +1,47 @@
-/* Import Share Tech Mono font */
+/* Load your custom font */
 @font-face {
   font-family: 'Share Tech Mono';
-  src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/ShareTechMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-/* Reset and base styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Global styles */
 body {
+  background-color: #0d0d0d;         /* hacker-style black/charcoal */
+  color: #bada55;                    /* hacker green */
   font-family: 'Share Tech Mono', monospace;
-  background-color: #0a0a0a; /* Same dark charcoal gray as the Hacker theme */
-  color: #ccff00;
-  line-height: 1.6;
+  margin: 0;
   padding: 2rem;
+  line-height: 1.6;
 }
 
+/* Container styling */
 .container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-a, a:visited {
-  color: #ccff00;
-  text-decoration: none;
+/* Headings */
+h1, h2, h3 {
+  color: #bada55;
+  margin-top: 1.5rem;
 }
 
+/* Links */
+a {
+  color: #badaff;
+  text-decoration: none;
+}
 a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #ccff00;
-  margin-bottom: 1rem;
+/* Header section */
+header {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
 }
 
-p {
-  margin-bottom: 1rem;
-}
-
-/* Button style for GitHub button */
-.btn, .btn-github {
-  background: none;
-  border: 2px solid #ccff00;
-  color: #ccff00;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  display: inline-block;
-  margin: 0.5rem 0;
-  font-family: 'Share Tech Mono', monospace;
-  cursor: pointer;
-}
-
-.btn:hover, .btn-github:hover {
-  background: #ccff00;
-  color: #0a0a0a;
-}
-
-/* Remove ./ prefix from title */
-#a-title::before {
-  content: none !important;
-}
+/* Fix for ./ issue – nothing to remove since we're not using Hacker */

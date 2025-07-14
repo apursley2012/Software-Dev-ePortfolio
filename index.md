@@ -9,35 +9,60 @@ This is my Software Development ePortfolio site. Here you will find the projects
 ### **More content coming soon!**
 
 ---
+---
+layout: default
+title: Software Development ePortfolio
+---
 
-<div class="card-container">
-  <div class="terminal-card">
-    <code>cd /review && python3 review.py</code>
-    <a href="/review/">Open Code Review</a>
-  </div>
+# Software Development ePortfolio
 
-  <div class="terminal-card">
-    <code>cd /artifacts && python3 artifacts.py</code>
-    <a href="/artifacts/">Open Artifacts</a>
-  </div>
+## Welcome to My Software Development ePortfolio
 
-  <div class="terminal-card">
-    <code>cd /narratives && python3 narratives.py</code>
-    <a href="/narratives/">Open Narratives</a>
-  </div>
+This is my Software Development ePortfolio site. Here you will find the projects and enhancements I have created while working toward my CS bachelor’s in Software Development.
 
-  <div class="terminal-card">
-    <code>cd /self-assessment && python3 assessment.py</code>
-    <a href="/self-assessment/">Open Self-Assessment</a>
-  </div>
+---
 
-  <div class="terminal-card">
-    <code>cd /contact && python3 contact.py</code>
-    <a href="/contact/">Open Contact Page</a>
+<div class="terminal-window">
+  <div class="terminal-header">
+    <span class="red-dot"></span>
+    <span class="yellow-dot"></span>
+    <span class="green-dot"></span>
   </div>
+  <pre><code>
+# Locate and open the Code Review file
+path = r"./review.py"
+file = open(path)
+print(file.read())
+# Output: "[Open Code Review](./review/)"
 
-  <div class="terminal-card">
-    <code>cd /resume && python3 resume.py</code>
-    <a href="/resume/">Open Resume</a>
-  </div>
+# Locate and open the Artifacts file
+path = r"./artifacts.py"
+file = open(path)
+print(file.read())
+# Output: "[Open Artifacts](./artifacts/)"
+
+# Locate and open the Narratives file
+path = r"./narratives.py"
+file = open(path)
+print(file.read())
+# Output: "[Open Narratives](./narratives/)"
+
+# Locate and open the Self-Assessment file
+path = r"./assessment.py"
+file = open(path)
+print(file.read())
+# Output: "[Open Self-Assessment](./self-assessment/)"
+
+# Locate and open the Contact file
+path = r"./contact.py"
+file = open(path)
+print(file.read())
+# Output: "[Open Contact Page](./contact/)"
+
+# Locate and open the Resume file
+path = r"./resume.py"
+file = open(path)
+print(file.read())
+# Output: "[Open Resume](./resume/)"
+</code></pre>
 </div>

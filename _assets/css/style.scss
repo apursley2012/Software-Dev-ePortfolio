@@ -1,133 +1,111 @@
-/* Font imports */
+/* assets/css/style.css */
+
+/*–– Import fonts ––*/
 @font-face {
   font-family: 'Share Tech Mono';
   src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
-
 @font-face {
   font-family: '256 Bytes';
   src: url('../fonts/256Bytes.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
 }
 
-/* Base styling */
+/*–– Base ––*/
 body {
-  background-color: #111;
-  color: #ffffff;
-  font-family: 'Share Tech Mono', monospace;
   margin: 0;
   padding: 0;
+  background: #111;              /* charcoal */
+  color: #eee;
+  font-family: 'Share Tech Mono', monospace;
 }
+a { text-decoration: none; }
 
-/* Page title and subtitle */
+/*–– Page Title ––*/
 .page-title {
   font-family: '256 Bytes', sans-serif;
-  text-align: center;
   color: #00ff99;
-  text-shadow:
-    0 0 5px #00ff99,
-    0 0 10px #00ff99,
-    0 0 20px #00ff99;
-  font-size: 2.5rem;
-  margin-top: 2rem;
-}
-
-.page-subtitle {
-  font-family: 'Share Tech Mono', monospace;
   text-align: center;
-  color: #ffffff;
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
+  font-size: 3rem;
+  margin: 1.5rem 0 0.2rem;
+  text-shadow:
+    0 0 8px #00ff99,
+    0 0 20px #00ff99;
+}
+.page-subtitle {
+  text-align: center;
+  color: #ddd;
+  margin-bottom: 2rem;
 }
 
-/* Terminal-style cards section */
+/*–– Terminal‐style nav section ––*/
 .terminal-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  margin: 3rem auto;
+  gap: 1rem;
+  margin: 2rem auto;
   max-width: 900px;
-  padding: 0 1rem;
 }
-
 .terminal-card {
-  background-color: #1a1a1a;
+  background: #1a1a1a;
   border: 1px solid #00ff99;
-  box-shadow: 0 0 5px #00ff99;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,255,153,0.4);
   padding: 1rem 1.5rem;
-  border-radius: 5px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .terminal-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 15px #00ff99;
+  box-shadow: 0 0 20px rgba(0,255,153,0.7);
 }
-
-.terminal-link {
+.terminal-card code {
   display: block;
-  color: #ffffff;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 1rem;
-  text-decoration: none;
-  text-shadow:
-    0 0 5px #00ff99,
-    0 0 10px #00ff99;
-}
-
-.terminal-link:hover {
   color: #00ff99;
-  text-shadow:
-    0 0 10px #00ff99,
-    0 0 20px #00ff99;
+  margin-bottom: 0.5rem;
 }
-
-/* Terminal window block (index.md) */
-.terminal-window {
-  background-color: #1e1e1e;
-  border-radius: 5px;
-  padding: 20px;
-  max-width: 800px;
-  margin: 40px auto;
-  box-shadow: 0 0 20px #00ffcc;
-}
-
-.terminal-header {
-  display: flex;
-  gap: 8px;
-  padding: 5px 10px;
-}
-
-.red-dot, .yellow-dot, .green-dot {
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  display: inline-block;
-}
-.red-dot { background: #ff5f56; }
-.yellow-dot { background: #ffbd2e; }
-.green-dot { background: #27c93f; }
-
-code {
+.terminal-card a {
+  color: #eee;
   display: block;
-  white-space: pre-wrap;
-  color: #00ffcc;
-  background-color: #111;
-  padding: 10px;
-  border-radius: 5px;
-  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding: 0.3rem 0;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+}
+.terminal-card a:hover {
+  color: #00ff99;
+  text-shadow: 0 0 6px #00ff99;
 }
 
-/* Footer */
-footer {
-  background-color: #1a1a1a;
-  color: #aaa;
+/*–– Page content container ––*/
+.container {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  line-height: 1.5;
+}
+.container h1,
+.container h2,
+.container h3 {
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  font-family: 'Share Tech Mono', monospace;
+  color: #00ff99;
+  margin-top: 1.5rem;
+}
+.container p {
+  margin: 1rem 0;
+}
+
+/*–– Footer ––*/
+.site-footer {
+  background: #1a1a1a;
+  color: #888;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+}
+.site-footer a {
+  color: #888;
+}
+.site-footer a:hover {
+  color: #00ff99;
 }

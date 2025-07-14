@@ -1,21 +1,58 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
+    <title>{{ page.title | default: site.title }}</title>
 
-{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% seo %}
+    <link rel="preload" href="{{ '/assets/fonts/ShareTechMono-Regular.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="{{ '/assets/fonts/256Bytes.otf' | relative_url }}" as="font" type="font/otf" crossorigin="anonymous">
   </head>
 
   <body>
+    <header class="site-header">
+      <h1 class="page-title">{{ site.title }}</h1>
+      <h2 class="page-subtitle">{{ site.description }}</h2>
+    </header>
 
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
-    </div>
+    <!-- Terminal-style command card links -->
+    <section class="terminal-links">
+      <div class="terminal-card">
+        <a href="/" class="terminal-link">$ python start.py</a>
+      </div>
+      <div class="terminal-card">
+        <a href="/review/" class="terminal-link">$ c++ review_code.cpp</a>
+      </div>
+      <div class="terminal-card">
+        <a href="/artifacts/" class="terminal-link">$ java Artifacts.java</a>
+      </div>
+      <div class="terminal-card">
+        <a href="/narratives/" class="terminal-link">$ sql SELECT * FROM narratives;</a>
+      </div>
+      <div class="terminal-card">
+        <a href="/self-assessment/" class="terminal-link">$ python self_assess.py</a>
+      </div>
+      <div class="terminal-card">
+        <a href="/contact/" class="terminal-link">$ echo 'Contact me'</a>
+      </div>
+    </section>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; {{ site.time | date: "%Y" }} Alysha Pursley</p>
+        <p>All rights reserved.</p>
+        <p>
+          <a href="mailto:alysha.pursley@snhu.edu">alysha.pursley@snhu.edu</a> |
+          <a href="https://github.com/apursley2012" target="_blank">GitHub</a> |
+          <a href="/resume">Resume</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

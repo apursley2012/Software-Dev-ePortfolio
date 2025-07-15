@@ -1,51 +1,37 @@
-<!-- _layouts/default.html -->
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{{ page.title | default: site.title }}</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    {% seo %}
-    <!-- preload your fonts -->
-    <link rel="preload" href="{{ '/assets/fonts/ShareTechMono-Regular.ttf' | relative_url }}"
-          as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" href="{{ '/assets/fonts/256Bytes.otf' | relative_url }}"
-          as="font" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" href="{{ '/assets/fonts/ShareTechMono-Regular.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="{{ '/assets/fonts/256Bytes.otf' | relative_url }}" as="font" type="font/otf" crossorigin="anonymous">
   </head>
-
   <body>
     <header class="site-header">
       <h1 class="page-title">{{ site.title }}</h1>
       <h2 class="page-subtitle">{{ site.description }}</h2>
     </header>
 
-    <!-- Terminal‐style nav cards -->
     <section class="terminal-links">
       <div class="terminal-card">
-        <code>$ python start.py</code>
-        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="/" class="terminal-link">$ python start.py</a>
       </div>
       <div class="terminal-card">
-        <code>$ python review.py</code>
-        <a href="{{ '/review/' | relative_url }}">Code Review</a>
+        <a href="/review/" class="terminal-link">$ c++ review_code.cpp</a>
       </div>
       <div class="terminal-card">
-        <code>$ python artifacts.py</code>
-        <a href="{{ '/artifacts/' | relative_url }}">Artifacts</a>
+        <a href="/artifacts/" class="terminal-link">Artifacts.java</a>
       </div>
       <div class="terminal-card">
-        <code>$ python narratives.py</code>
-        <a href="{{ '/narratives/' | relative_url }}">Narratives</a>
+        <a href="/narratives/" class="terminal-link">$ sql SELECT * FROM narratives;</a>
       </div>
       <div class="terminal-card">
-        <code>$ python self_assess.py</code>
-        <a href="{{ '/self-assessment/' | relative_url }}">Self-Assessment</a>
+        <a href="/self-assessment/" class="terminal-link">$ python self_assess.py</a>
       </div>
       <div class="terminal-card">
-        <code>$ python contact.py</code>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+        <a href="/contact/" class="terminal-link">$ echo 'Contact me'</a>
       </div>
     </section>
 
@@ -54,10 +40,15 @@
     </main>
 
     <footer class="site-footer">
-      <p>© {{ site.time | date: "%Y" }} Alysha Pursley · 
-        <a href="mailto:alysha.pursley@snhu.edu">Email</a> ·
-        <a href="https://github.com/apursley2012">GitHub</a>
-      </p>
+      <div class="footer-container">
+        <p>&copy; {{ site.time | date: "%Y" }} Alysha Pursley</p>
+        <p>All rights reserved.</p>
+        <p>
+          <a href="mailto:alysha.pursley@snhu.edu">alysha.pursley@snhu.edu</a> |
+          <a href="https://github.com/apursley2012" target="_blank">GitHub</a> |
+          <a href="/resume/">Resume</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

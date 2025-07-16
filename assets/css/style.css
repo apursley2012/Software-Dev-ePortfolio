@@ -163,3 +163,90 @@ p {
     border-radius: 3px;
     text-shadow: 0 0 5px #ccff00; /* Glow for inline code */
 }
+
+/* Window Container */
+.window-container {
+    background-color: #c0c0c0; /* Light grey for the window background */
+    border: 2px outset #ffffff; /* 3D effect for the border */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    margin: 2rem auto;
+    max-width: 900px; /* Match your terminal-window max-width */
+    overflow: hidden; /* Ensure content stays within borders */
+    display: flex;
+    flex-direction: column; /* Stack title bar and content */
+}
+
+.window-title-bar {
+    background: linear-gradient(to right, #000080, #1084d0); /* Windows 95 blue gradient */
+    color: #ffffff;
+    padding: 3px 5px;
+    font-family: 'Pixel Game', monospace; /* Use a retro-style font for the title bar */
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000080; /* Darker line at the bottom of title bar */
+    cursor: default; /* Indicate it's not directly interactive */
+    user-select: none; /* Prevent text selection */
+}
+
+.window-title-text {
+    flex-grow: 1; /* Allow text to take available space */
+    padding-left: 5px; /* Little padding for the text */
+}
+
+.window-controls {
+    display: flex;
+    gap: 2px; /* Space between control buttons */
+}
+
+.window-control-button {
+    background-color: #c0c0c0;
+    border: 2px outset #ffffff;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace; /* Or a more iconic font if you have one */
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.window-control-button:active {
+    border: 2px inset #ffffff; /* Press effect */
+    background-color: #a0a0a0;
+}
+
+.window-content {
+    background-color: #000000; /* Dark background for the terminal content */
+    padding: 1px; /* Small padding inside the window content area */
+    flex-grow: 1; /* Allow content to fill remaining space */
+}
+
+/* Adjustments for existing elements to fit within the new structure */
+.terminal-window {
+    background-color: #0a0a0a; /* Keep the dark background */
+    padding: 1.5rem;
+    margin: 0; /* Remove margin as the container now handles spacing */
+    border-radius: 0; /* Remove border-radius for sharp corners within the window */
+    box-shadow: none; /* Remove shadow as the container has it */
+    max-width: none; /* Let the container define the max-width */
+    border: none; /* Remove any border that might interfere */
+}
+
+.terminal-window:hover {
+    box-shadow: none; /* No hover shadow, the wrapper provides visual cues */
+    transform: none; /* No lift on hover for the terminal itself */
+}
+
+/* Adjustments for markdown-content if you want it to also appear within a window */
+.markdown-content {
+    background-color: #0a0a0a; /* Match terminal background */
+    padding: 2rem;
+    margin: 2rem auto; /* Keep original margin for now, unless also wrapped */
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+    max-width: 900px;
+}

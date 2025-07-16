@@ -1,7 +1,7 @@
 body {
   background-color: #2a2a2a;
   color: #ffffff;
-  font-family: 'Share Tech Mono','Consolas', 'Courier', 'Courier New', 'Lucida Console', 'Lucida Typewriter', monospace;
+  font-family: 'ShareTechMono', monospace;
   margin: 0;
   padding: 2rem;
   display: flex;
@@ -16,28 +16,52 @@ main {
 }
 
 h1, h2, h3 {
-  color: #ccff00;
-  font-family: '256Bytes', 'Digibats', 'GroutPix Flow', 'NanoPix', 'Pixel Game', 'Space Retro', monospace;
-  text-align: center;
-  text-shadow: 0 0 8px #ccff00;
-  margin-bottom: 1.5rem;
+    color: #ccff00;
+    font-family: '256Bytes', 'NanoPixel', 'Speed Pixel', 'Space Retro', 'ShareTechMono' 
+      'Pixel Game', 'Digibats',  'GroutpixFlow', 'Fortine', monospace;
+    text-align: center;
+    /* Enhanced glow for headers */
+    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
+    margin-bottom: 1.5rem;
 }
 
 h1 {
     font-size: 3.5rem;
+    color: #ccff00;
+    font-family: '256Bytes', 'NanoPixel', 'Speed Pixel', 'Space Retro', 'ShareTechMono' 
+      'Pixel Game', 'Digibats',  'GroutpixFlow', 'Fortine', monospace;
+    text-align: center;
+    /* Enhanced glow for headers */
+    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
+    margin-bottom: 1.5rem;
 }
 
 h2 {
     font-size: 2.5rem;
+    color: #ccff00;
+    font-family: '256Bytes', 'NanoPixel', 'Speed Pixel', 'Space Retro', 'ShareTechMono' 
+      'Pixel Game', 'Digibats',  'GroutpixFlow', 'Fortine', monospace;
+    text-align: center;
+    /* Enhanced glow for headers */
+    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
+    margin-bottom: 1.5rem;
 }
 
 h3 {
     font-size: 1.8rem;
+    color: #ccff00;
+    font-family: '256Bytes', 'NanoPixel', 'Speed Pixel', 'Space Retro', 'ShareTechMono' 
+      'Pixel Game', 'Digibats',  'GroutpixFlow', 'Fortine', monospace;
+    text-align: left;
+    /* Enhanced glow for headers */
+    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
+    margin-bottom: 1.5rem;
 }
 
 p {
     font-size: 1.1rem;
     line-height: 1.6;
+    font-family: 'ShareTechMono', monospace;
     margin-bottom: 1rem;
 }
 
@@ -64,6 +88,17 @@ p {
     box-shadow: 0 0 25px rgba(0, 255, 136, 0.8); /* Enhanced glow on hover */
     transform: translateY(-3px); /* Slight lift on hover */
 }
+.terminal-header {
+  background-color: #1c1c1c;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Share Tech Mono', monospace;
+  color: #00ff00;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #444;
+}
 
 .terminal-window code {
   display: block;
@@ -74,6 +109,8 @@ p {
   font-size: 1rem;
   line-height: 1.4;
   tab-size: 4; /* Ensure consistent tab spacing */
+  /* Added glow for terminal code text */
+  text-shadow: 0 0 5px #ccff00, 0 0 10px #ccff00;
 }
 
 /* General markdown content styling */
@@ -93,6 +130,7 @@ p {
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px dashed #ccff00; /* Subtle separator */
+    text-shadow: 0 0 10px #ccff00; /* Apply glow here as well */
 }
 
 .markdown-content p,
@@ -127,6 +165,7 @@ p {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+    text-shadow: 0 0 5px #ccff00; /* Glow for custom bullet */
 }
 
 .markdown-content pre {
@@ -141,85 +180,69 @@ p {
     background-color: #1a1a1a;
     padding: 0.2em 0.4em;
     border-radius: 3px;
+    text-shadow: 0 0 5px #ccff00; /* Glow for inline code */
 }
 
-.window-container {
-  background-color: #c0c0c0;
+/* Retro terminal container styling */
+.terminal-container {
+  background-color: #c0c0c0; /* Retro Windows gray */
   border: 2px solid #808080;
-  border-radius: 4px;
-  box-shadow: inset -2px -2px 4px #ffffff, inset 2px 2px 4px #808080;
+  box-shadow: inset -1px -1px 0 #ffffff, inset 1px 1px 0 #000000;
+  padding: 0;
   margin: 2rem auto;
   max-width: 900px;
-  padding: 0;
+  font-family: 'Share Tech Mono', monospace;
+
+
+
 }
 
-.window-titlebar {
-  background-color: #c0c0c0;
+/* Retro title bar */
+.terminal-titlebar {
+  background-color: #000080; /* Classic blue */
+  color: #ffffff;
   display: flex;
+
   align-items: center;
   justify-content: space-between;
   padding: 0.25rem 0.5rem;
-  border-bottom: 2px solid #808080;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 0.95rem;
-  height: 28px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-shadow: 1px 1px #000;
 }
 
-.window-titlebar .title-text {
-  color: #000000;
+/* Title text left-aligned */
+.terminal-title {
   flex: 1;
   text-align: left;
-  padding-left: 4px;
 }
 
-.window-buttons {
+/* Retro buttons (right corner) */
+.terminal-buttons {
   display: flex;
   gap: 4px;
 }
 
-.window-button {
-  width: 20px;
-  height: 20px;
-  background-color: #d4d0c8;
-  border: 1px solid #808080;
-  box-shadow: inset -1px -1px 1px #ffffff, inset 1px 1px 1px #404040;
-  font-weight: bold;
-  font-size: 13px;
-  color: black;
+.terminal-btn {
+  width: 18px;
+  height: 18px;
+  background-color: #c0c0c0;
+  border: 2px outset #ffffff;
+  color: #000;
+  font-size: 0.75rem;
   text-align: center;
-  line-height: 20px;
-  cursor: default;
+  line-height: 14px;
+  font-weight: bold;
+  font-family: monospace;
 }
 
-.window-button:hover {
-  background-color: #e4e0d8;
+/* Link styling for page titles inside terminal window */
+.terminal-title a.terminal-link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.window-terminal {
-  background-color: #0a0a0a;
-  padding: 1rem 1.5rem;
-  border-top: 2px solid #444;
-  border-bottom: 2px solid #444;
-  border-left: 2px solid #444;
-  border-right: 2px solid #444;
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 1rem;
-  color: #ccff00;
-  white-space: pre-wrap;
-  text-shadow: 0 0 5px #ccff00, 0 0 10px #ccff00;
-}
-
-
-.cursor {
-  display: inline-block;
-  width: 0.65ch;
-  background-color: #ccff00;
-  margin-left: 2px;
-  animation: blink 1s step-start 0s infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
+.terminal-title a.terminal-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

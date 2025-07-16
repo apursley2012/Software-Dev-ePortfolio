@@ -49,23 +49,28 @@
 	     font-style: normal;
 	}
     </style>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const text = "Welcome to My Software Development ePortfolio";
+			const target = document.getElementById("typed-welcome");
+			let i = 0;
+			
+			function typeChar() {
+				if (i < text.length) {
+					target.textContent += text.charAt(i);
+					i++;
+					setTimeout(typeChar, 60);
+				}
+			}
+			
+			if (target) {
+				target.textContent = "";
+				typeChar();
+			}
+		});
+	</script>
 </head>
 <body>
-    <script>
-  const text = "Welcome to My Software Development ePortfolio";
-  const element = document.getElementById("typed-welcome");
-  let index = 0;
-
-  function typeText() {
-    if (index < text.length) {
-      element.textContent += text.charAt(index);
-      index++;
-      setTimeout(typeText, 50); // typing speed (ms per letter)
-    }
-  }
-
-  window.onload = typeText;
-</script>
     <main>
         {{ content }}
     </main>

@@ -143,96 +143,83 @@ p {
     border-radius: 3px;
 }
 
-/* Terminal Wrapper - Classic Window Style */
-.terminal-container {
-  background-color: #d4d0c8; /* Classic gray window body */
-  border: 2px solid #000;
-  box-shadow:
-    inset -1px -1px 0 #808080,
-    inset 1px 1px 0 #ffffff,
-    0 0 15px rgba(0, 255, 136, 0.5); /* Outer glow */
-  width: fit-content;
+.window-container {
+  background-color: #c0c0c0;
+  border: 2px solid #808080;
+  border-radius: 4px;
+  box-shadow: inset -2px -2px 4px #ffffff, inset 2px 2px 4px #808080;
   margin: 2rem auto;
-  font-family: 'Share Tech Mono', monospace;
-  padding: 0; /* Frame handles padding */
-  display: flex;
-  flex-direction: column;
+  max-width: 900px;
+  padding: 0;
 }
 
-/* Header */
-.terminal-header {
+.window-titlebar {
   background-color: #c0c0c0;
-  color: #000;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 4px 8px;
-  font-size: 0.9rem;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
   border-bottom: 2px solid #808080;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.95rem;
   height: 28px;
 }
 
-/* Title on left */
-.terminal-title {
-  font-weight: bold;
+.window-titlebar .title-text {
+  color: #000000;
+  flex: 1;
+  text-align: left;
+  padding-left: 4px;
 }
 
-/* Window buttons (right) */
-.terminal-buttons {
+.window-buttons {
   display: flex;
   gap: 4px;
 }
 
-.terminal-buttons .button {
-  background: #d4d0c8;
-  border: 2px solid #808080;
+.window-button {
   width: 20px;
   height: 20px;
+  background-color: #d4d0c8;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 1px #ffffff, inset 1px 1px 1px #404040;
   font-weight: bold;
-  color: #000;
-  box-shadow: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #404040; /* Raised */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: monospace;
-  font-size: 14px;
+  font-size: 13px;
+  color: black;
+  text-align: center;
+  line-height: 20px;
+  cursor: default;
 }
 
-/* Inner Terminal Box */
+.window-button:hover {
+  background-color: #e4e0d8;
+}
+
 .window-terminal {
   background-color: #0a0a0a;
-  color: #ccff00;
-  font-family: 'Share Tech Mono', monospace;
-  padding: 1rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  white-space: pre-wrap;
-  text-align: left;
+  padding: 1rem 1.5rem;
   border-top: 2px solid #444;
   border-bottom: 2px solid #444;
-  width: 100%;
+  border-left: 2px solid #444;
+  border-right: 2px solid #444;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  color: #ccff00;
+  white-space: pre-wrap;
+  text-shadow: 0 0 5px #ccff00, 0 0 10px #ccff00;
 }
 
-/* Terminal Links */
-.window-terminal a {
-  color: #00ffff;
-  text-decoration: none;
-}
-.window-terminal a:hover {
-  text-decoration: underline;
-}
 
-/* Blinking Cursor */
 .cursor {
   display: inline-block;
-  width: 8px;
-  height: 1em;
+  width: 0.65ch;
   background-color: #ccff00;
-  animation: blink 1s steps(2, start) infinite;
-  margin-left: 3px;
+  margin-left: 2px;
+  animation: blink 1s step-start 0s infinite;
 }
+
 @keyframes blink {
-  to {
-    visibility: hidden;
+  50% {
+    opacity: 0;
   }
 }

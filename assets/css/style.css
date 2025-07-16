@@ -142,3 +142,97 @@ p {
     padding: 0.2em 0.4em;
     border-radius: 3px;
 }
+
+/* Terminal Wrapper - Classic Window Style */
+.terminal-container {
+  background-color: #d4d0c8; /* Classic gray window body */
+  border: 2px solid #000;
+  box-shadow:
+    inset -1px -1px 0 #808080,
+    inset 1px 1px 0 #ffffff,
+    0 0 15px rgba(0, 255, 136, 0.5); /* Outer glow */
+  width: fit-content;
+  margin: 2rem auto;
+  font-family: 'Share Tech Mono', monospace;
+  padding: 0; /* Frame handles padding */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.terminal-header {
+  background-color: #c0c0c0;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border-bottom: 2px solid #808080;
+  height: 28px;
+}
+
+/* Title on left */
+.terminal-title {
+  font-weight: bold;
+}
+
+/* Window buttons (right) */
+.terminal-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.terminal-buttons .button {
+  background: #d4d0c8;
+  border: 2px solid #808080;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  color: #000;
+  box-shadow: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #404040; /* Raised */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+/* Inner Terminal Box */
+.window-terminal {
+  background-color: #0a0a0a;
+  color: #ccff00;
+  font-family: 'Share Tech Mono', monospace;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  text-align: left;
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+  width: 100%;
+}
+
+/* Terminal Links */
+.window-terminal a {
+  color: #00ffff;
+  text-decoration: none;
+}
+.window-terminal a:hover {
+  text-decoration: underline;
+}
+
+/* Blinking Cursor */
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  background-color: #ccff00;
+  animation: blink 1s steps(2, start) infinite;
+  margin-left: 3px;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}

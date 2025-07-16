@@ -1,7 +1,130 @@
+/* --- ALL @font-face RULES GO HERE AT THE TOP --- */
+
+@font-face {
+    font-family: 'Speed Pixel';
+    src: url('/assets/fonts/SpeedPixel.woff2') format('woff2'),
+        url('/assets/fonts/SpeedPixel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Speed Pixel';
+    src: url('/assets/fonts/SpeedPixel-Italic.woff2') format('woff2'),
+        url('/assets/fonts/SpeedPixel-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Retro';
+    src: url('/assets/fonts/SpaceRetro.woff2') format('woff2'),
+        url('/assets/fonts/SpaceRetro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Note: There were two identical 'Space Retro' font-face rules; keeping one. */
+
+@font-face {
+    font-family: 'Pixel Game Extrude';
+    src: url('/assets/fonts/PixelGameExtrude.woff2') format('woff2'),
+        url('/assets/fonts/PixelGameExtrude.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pixel Game';
+    src: url('/assets/fonts/PixelGame.woff2') format('woff2'),
+        url('/assets/fonts/PixelGame.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nano Pix DEMO';
+    src: url('/assets/fonts/NanoPixDEMO-Regular.woff2') format('woff2'),
+        url('/assets/fonts/NanoPixDEMO-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Great Paschal';
+    src: url('/assets/fonts/GreatPaschal.woff2') format('woff2'),
+        url('/assets/fonts/GreatPaschal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Great Paschal';
+    src: url('/assets/fonts/GreatPaschal-Italic.woff2') format('woff2'),
+        url('/assets/fonts/GreatPaschal-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Share Tech Mono';
+    src: url('/assets/fonts/ShareTechMono-Regular.woff2') format('woff2'),
+        url('/assets/fonts/ShareTechMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Digibats';
+    src: url('/assets/fonts/Digibats-Italic.woff2') format('woff2'),
+        url('/assets/fonts/Digibats-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Digibats';
+    src: url('/assets/fonts/Digibats.woff2') format('woff2'),
+        url('/assets/fonts/Digibats.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Groutpix Flow';
+    src: url('/assets/fonts/GroutpixFlow.woff2') format('woff2'),
+        url('/assets/fonts/GroutpixFlow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fortine';
+    src: url('/assets/fonts/Fortine-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Fortine-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Your other CSS rules follow below --- */
+
 body {
   background-color: #2a2a2a;
   color: #ffffff;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Share Tech Mono', monospace; /* Default body font */
   margin: 0;
   padding: 2rem;
   display: flex;
@@ -17,7 +140,7 @@ main {
 
 h1, h2, h3 {
   color: #ccff00;
-  fontface-family: 'NanoPix', monospace;
+  font-family: 'Nano Pix DEMO', monospace; /* Using Nano Pix DEMO for all headers */
   text-align: center;
   /* Enhanced glow for headers */
   text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
@@ -25,29 +148,17 @@ h1, h2, h3 {
 }
 
 h1 {
-    fontface-family: 'NanoPix', monospace;
     text-align: center;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
     font-size: 3.5rem;
 }
 
 h2 {
-    fontface-family: 'NanoPix', monospace;
     text-align: left;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
     font-size: 2.5rem;
 }
 
 h3 {
-    fontface-family: 'NanoPix', monospace;
     text-align: left;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
     font-size: 1.8rem;
 }
 
@@ -180,7 +291,7 @@ p {
     background: linear-gradient(to right, #000080, #1084d0); /* Windows 95 blue gradient */
     color: #ffffff;
     padding: 3px 5px;
-    font-family: 'Pixel Game', monospace; /* Use a retro-style font for the title bar */
+    font-family: 'Pixel Game', monospace; /* Using Pixel Game for the title bar for retro feel */
     font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
@@ -208,10 +319,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Share Tech Mono', monospace; /* Or a more iconic font if you have one */
+    font-family: 'Share Tech Mono', monospace; /* Keep 'Share Tech Mono' or choose 'Pixel Game' for symbols */
     font-size: 1rem;
     cursor: pointer;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    line-height: 1; /* Helps with vertical centering of symbols */
 }
 
 .window-control-button:active {

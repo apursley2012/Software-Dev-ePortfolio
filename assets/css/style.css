@@ -135,7 +135,8 @@ p {
 .markdown-content pre,
 .markdown-content code {
     color: #ffffff; /* Ensure body text is white */
-    font-family: 'ShareTechMono', monospace;
+    font-family: 'ShareTech
+    Mono', monospace;
     font-size: 1rem;
     line-height: 1.6;
 }

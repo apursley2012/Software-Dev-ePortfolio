@@ -17,8 +17,7 @@ main {
 
 h1, h2, h3 {
     color: #ccff00;
-    font-family: '256Bytes', 'NanoPixel', 'Speed Pixel', 'Space Retro', 'ShareTechMono' 
-      'Pixel Game', 'Digibats',  'GroutpixFlow', 'Fortine', monospace;
+    font-family: '256Bytes', 'NanoPix', 'SpeedPixel', 'SpaceRetro', 'ShareTechMono', 'PixelGame', 'Digibats', 'GroutpixFlow', 'Fortine', monospace;
     text-align: center;
     /* Enhanced glow for headers */
     text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
@@ -28,8 +27,7 @@ h1, h2, h3 {
 h1 {
     font-size: 3.5rem;
     color: #ccff00;
-    font-family: '256Bytes', 'NanoPixel', 'Speed Pixel', 'Space Retro', 'ShareTechMono' 
-      'Pixel Game', 'Digibats',  'GroutpixFlow', 'Fortine', monospace;
+    font-family: '256Bytes', 'NanoPix', 'SpeedPixel', 'SpaceRetro', 'ShareTechMono', 'PixelGame', 'Digibats', 'GroutpixFlow', 'Fortine', monospace;
     text-align: center;
     /* Enhanced glow for headers */
     text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
@@ -39,8 +37,7 @@ h1 {
 h2 {
     font-size: 2.5rem;
     color: #ccff00;
-    font-family: '256Bytes', 'NanoPixel', 'Speed Pixel', 'Space Retro', 'ShareTechMono' 
-      'Pixel Game', 'Digibats',  'GroutpixFlow', 'Fortine', monospace;
+    font-family: '256Bytes', 'NanoPix', 'SpeedPixel', 'SpaceRetro', 'ShareTechMono', 'PixelGame', 'Digibats', 'GroutpixFlow', 'Fortine', monospace;
     text-align: center;
     /* Enhanced glow for headers */
     text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
@@ -50,8 +47,7 @@ h2 {
 h3 {
     font-size: 1.8rem;
     color: #ccff00;
-    font-family: '256Bytes', 'NanoPixel', 'Speed Pixel', 'Space Retro', 'ShareTechMono' 
-      'Pixel Game', 'Digibats',  'GroutpixFlow', 'Fortine', monospace;
+    font-family: '256Bytes', 'NanoPix', 'SpeedPixel', 'SpaceRetro', 'ShareTechMono', 'PixelGame', 'Digibats', 'GroutpixFlow', 'Fortine', monospace;
     text-align: left;
     /* Enhanced glow for headers */
     text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
@@ -66,7 +62,7 @@ p {
 }
 
 .intro-text {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'ShareTechMono', monospace;
     color: #ffffff;
     text-align: center;
     font-size: 1.2rem;
@@ -94,7 +90,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'ShareTechMono', monospace;
   color: #00ff00;
   font-size: 0.9rem;
   border-bottom: 1px solid #444;
@@ -105,7 +101,7 @@ p {
   background: none;
   white-space: pre-wrap;
   color: #ccff00;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'ShareTechMono', monospace;
   font-size: 1rem;
   line-height: 1.4;
   tab-size: 4; /* Ensure consistent tab spacing */
@@ -139,7 +135,7 @@ p {
 .markdown-content pre,
 .markdown-content code {
     color: #ffffff; /* Ensure body text is white */
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'ShareTechMono', monospace;
     font-size: 1rem;
     line-height: 1.6;
 }

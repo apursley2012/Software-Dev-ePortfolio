@@ -1,7 +1,7 @@
 body {
   background-color: #2a2a2a;
   color: #ffffff;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Share Tech Mono','Consolas', 'Courier', 'Courier New', 'Lucida Console', 'Lucida Typewriter', monospace;
   margin: 0;
   padding: 2rem;
   display: flex;
@@ -17,7 +17,7 @@ main {
 
 h1, h2, h3 {
   color: #ccff00;
-  font-family: '256 Bytes', monospace;
+  font-family: '256Bytes', 'Digibats', 'GroutPix Flow', 'NanoPix', 'Pixel Game', 'Space Retro', monospace;
   text-align: center;
   text-shadow: 0 0 8px #ccff00;
   margin-bottom: 1.5rem;

@@ -5,115 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <title>{{ page.title }} - Software Development ePortfolio</title>
-      <style>
-          @font-face {
-                 font-family: '256Bytes';
-                      src: 
-                         url('/assets/fonts/TwoFiftySixBytes-Regular.woff2') format('woff2'),
-                          url('/assets/fonts/TwoFiftySixBytes-Regular.woff') format('woff'),
-                         url('/assets/fonts/256Bytes.otf') format('opentype');
-                    font-weight: normal;
-                     font-style: normal;
-                     font-display: swap;
-                     }
-                    
-          @font-face {
-                font-family: 'SpeedPixel';
-                    src: 
-                        url('/assets/fonts/SpeedPixel.woff2') format('woff2'),
-                        url('/assets/fonts/SpeedPixel.woff') format('woff'),
-                         url('/assets/fonts/SpeedPixel.ttf') format('truetype');
-                    font-weight: normal;
-                    font-style: normal;
-                    font-display: swap;
-                    }
-         @font-face {
-               font-family: 'SpaceRetro';
-                    src: 
-                         url('/assets/fonts/SpaceRetro.woff2') format('woff2'),
-                         url('/assets/fonts/SpaceRetro.woff') format('woff'),
-                         url('/assets/fonts/SpaceRetro.ttf') format('truetype'),
-                         url('/assets/fonts/SpaceRetro.otf') format('opentype');
-                    font-weight: normal;
-                    font-style: normal;
-                    font-display: swap;
-                    }
-         @font-face {
-               font-family: 'PixelGame';
-                    src: 
-                        url('/assets/fonts/PixelGame.woff2') format('woff2'),
-                        url('/assets/fonts/PixelGame.woff') format('woff'),
-                        url('/assets/fonts/PixelGame.otf') format('opentype');
-                    font-weight: normal;
-                    font-style: normal;
-                    font-display: swap;
-                    }
-        
-         @font-face {
-               font-family: 'NanoPix';
-                    src: 
-                        url('/assets/fonts/NanoPixDEMO-Regular.woff2') format('woff2'),
-                        url('/assets/fonts/NanoPixDEMO-Regular.woff') format('woff'),
-                        url('/assets/fonts/NanoPix.ttf') format('truetype');
-                    font-weight: normal;
-                    font-style: normal;
-                    font-display: swap;
-                    }
-     
-         @font-face {
-               font-family: 'GreatPaschal';
-                    src: 
-                        url('/assets/fonts/GreatPaschal.woff2') format('woff2'),
-                        url('/assets/fonts/GreatPaschal.woff') format('woff'),
-                        url('/assets/fonts/Great-Paschal.otf') format('opentype');
-                    font-weight: normal;
-                    font-style: normal;
-                    font-display: swap;
-                    }
-         @font-face {
-               font-family: 'ShareTechMono';
-                    src: 
-                        url('/assets/fonts/ShareTechMono-Regular.woff2') format('woff2'),
-                        url('/assets/fonts/ShareTechMono-Regular.woff') format('woff'),
-                        url('/assets/fonts/ShareTechMono-Regular.ttf') format('truetype');
-                    font-weight: normal;
-                    font-style: normal;
-                    font-display: swap;
-                    }
-                      
-         @font-face {
-               font-family: 'Digibats';
-                    src: 
-                        url('/assets/fonts/Digibats.woff2') format('woff2'),
-                        url('/assets/fonts/Digibats.woff') format('woff'),
-                        url('/assets/fonts/Digibats.otf') format('opentype');
-                    font-weight: normal;
-                    font-style: normal;
-                    font-display: swap;
-                    }
-                    
-         @font-face {
-              font-family: 'GroutpixFlow';
-                   src: 
-                       url('/assets/fonts/GroutpixFlow.woff2') format('woff2'),
-                       url('/assets/fonts/GroutpixFlow.woff') format('woff'),
-                        url('/assets/fonts/GroutpixFlow-Regular.ttf') format('truetype');
-                   font-weight: normal;
-                   font-style: normal;
-                   font-display: swap;
-                   }
-       
-         @font-face {
-              font-family: 'Fortine';
-                   src: 
-                       url('/assets/fonts/Fortine-Regular.woff2') format('woff2'),
-                       url('/assets/fonts/Fortine-Regular.woff') format('woff'),
-                       url('/assets/fonts/Fortine-Regular.otf') format('opentype');
-                   font-weight: normal;
-                    font-style: normal;
-                    font-display: swap;
-                    }
-      </style>
+	<style> 
+	@font-face {
+		font-family: '256Bytes';
+		src: url('/assets/fonts/TwoFiftySixBytes-Regular.woff2') format('woff2'),
+			url('/assets/fonts/TwoFiftySixBytes-Regular.woff') format('woff'),
+			url('/assets/fonts/256Bytes.otf') format('opentype');
+		font-weight: normal;
+  		font-style: normal;
+  		font-display: swap;
+		}
+
+	@font-face {
+		  font-family: 'SpeedPixel';
+		  src: url('/assets/fonts/SpeedPixel.woff2') format('woff2'),
+		       url('/assets/fonts/SpeedPixel-Italic.woff2') format('woff2'),
+		       url('/assets/fonts/SpeedPixel.woff') format('woff'),
+		       url('/assets/fonts/SpeedPixel.ttf') format('truetype');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+		
+	@font-face {
+		  font-family: 'SpaceRetro';
+		  src: url('/assets/fonts/SpaceRetro.woff2') format('woff2'),
+		       url('/assets/fonts/SpaceRetro.woff') format('woff'),
+		       url('/assets/fonts/SpaceRetro.ttf') format('truetype'),
+		       url('/assets/fonts/SpaceRetro.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+		
+	@font-face {
+		  font-family: 'PixelGame';
+		  src: url('/assets/fonts/PixelGame.woff2') format('woff2'),
+		       url('/assets/fonts/PixelGame.woff') format('woff'),
+		       url('/assets/fonts/PixelGame.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+		
+	@font-face {
+		  font-family: 'NanoPix';
+		  src: url('/assets/fonts/NanoPixDEMO-Regular.woff2') format('woff2'),
+		       url('/assets/fonts/NanoPixDEMO-Regular.woff') format('woff'),
+		       url('/assets/fonts/NanoPix.ttf') format('truetype');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+		
+	@font-face {
+		  font-family: 'GreatPaschal';
+		  src: url('/assets/fonts/GreatPaschal.woff2') format('woff2'),
+		       url('/assets/fonts/GreatPaschal.woff') format('woff'),
+		       url('/assets/fonts/GreatPaschal.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+		
+	@font-face {
+		  font-family: 'ShareTechMono';
+		  src: url('/assets/fonts/ShareTechMono-Regular.woff2') format('woff2'),
+		       url('/assets/fonts/ShareTechMono-Regular.woff') format('woff'),
+		       url('/assets/fonts/ShareTechMono-Regular.ttf') format('truetype');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+		
+	@font-face {
+		  font-family: 'Digibats';
+		  src: url('/assets/fonts/Digibats.woff2') format('woff2'),
+		       url('/assets/fonts/Digibats.woff') format('woff'),
+		       url('/assets/fonts/Digibats.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+		
+	@font-face {
+		  font-family: 'GroutpixFlow';
+		  src: url('/assets/fonts/GroutpixFlow.woff2') format('woff2'),
+		       url('/assets/fonts/GroutpixFlow.woff') format('woff'),
+		       url('/assets/fonts/GroutpixFlow-Regular.ttf') format('truetype');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+		
+	@font-face {
+		  font-family: 'Fortine';
+		  src: url('/assets/fonts/Fortine-Regular.woff2') format('woff2'),
+		       url('/assets/fonts/Fortine-Regular.woff') format('woff'),
+		       url('/assets/fonts/Fortine-Regular.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		  font-display: swap;
+		}
+	</style>
 </head>
 	
 	<script>

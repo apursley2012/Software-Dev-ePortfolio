@@ -108,25 +108,25 @@
         }
     </style>
 </head>
-    <script>
+	
+	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			const text = "Welcome to My Software Development ePortfolio";
 			const target = document.getElementById("typed-welcome");
 			let i = 0;
-			
 			function typeChar() {
-				if (i < text.length) {
+				if (i < text.length) {			
 					target.textContent += text.charAt(i);
 					i++;
-					setTimeout(typeChar, 60);
+					setTimeout(typeChar, 60);				
 				}
-			}
-			
-			if (target) {
-				target.textContent = "";
+			}						
+			if (target) {				
+				target.textContent = "";			
 				typeChar();
 			}
-		});
+		});	
+	
 	</script>
 <body>
     <main>

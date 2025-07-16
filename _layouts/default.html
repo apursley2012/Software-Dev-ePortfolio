@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - Software Development ePortfolio</title>
-
-    <link rel="stylesheet" href="/assets/css/style.css">
-
-    <link rel="preload" href="/assets/fonts/NanoPixDEMO-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/ShareTechMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/PixelGame.woff2" as="font" type="font/woff2" crossorigin>
-    
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/assets/img/favicon.ico">
+</head>
     <script>
 		document.addEventListener("DOMContentLoaded", function () {
 			const text = "Welcome to My Software Development ePortfolio";
@@ -31,10 +27,22 @@
 			}
 		});
 	</script>
-</head>
 <body>
+
+  <div class="wrapper">
+    <div class="toolbar">
+      <div class="window-title">Fallout</div>
+      <div class="window-controls">
+        <div class="btn">⨯</div>
+        <div class="btn">☐</div>
+        <div class="btn">—</div>
+      </div>
+    </div>
+
     <main>
-        {{ content }}
+      {{ content }}
     </main>
+  </div>
+
 </body>
 </html>

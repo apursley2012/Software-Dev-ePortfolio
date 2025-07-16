@@ -8,6 +8,14 @@ title: Software Development ePortfolio
 This is my Software Development ePortfolio site. Here you will find the projects and enhancements I have created while working toward my CS bachelor’s in Software Development.
 ---
 <div class="terminal-window" onclick="window.location.href='https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/review.md'">
+    <div class="terminal-titlebar">
+        <div class="terminal-buttons">
+            <div class="terminal-btn">–</div>
+            <div class="terminal-btn">□</div>
+            <div class="terminal-btn">×</div>
+        </div>
+        <div class="terminal-title">review.md</div>
+    </div>
     <code>
 # Click to open the Code Review section
 path = r"https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/review.md"

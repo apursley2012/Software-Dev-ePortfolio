@@ -8,17 +8,6 @@ title: Software Development ePortfolio
 
 <p class="intro-text">This is my Software Development ePortfolio site. Here you will find the projects and enhancements I have created while working toward my CS bachelor’s in Software Development..</p>
 
----
-layout: default
-title: Software Development ePortfolio
----
-
-<h2 id="typed-welcome">Welcome to My Software Development ePortfolio</h2>
-
-<p class="intro-text">
-This is my Software Development ePortfolio site. Here you will find the projects and enhancements I have created while working toward my CS bachelor’s in Software Development.
-</p>
-
 <!-- Code Review Terminal -->
 <div class="terminal-container">
   <div class="terminal-header">
@@ -30,7 +19,7 @@ This is my Software Development ePortfolio site. Here you will find the projects
     </div>
   </div>
   <div class="window-terminal">
-<pre><code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
+<pre><code>apursley2012@ePortfolio.git:~$ cd Software-Dev-ePortfolio
 apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
 Python 3.11.4 (tags/v3.11.4)
 >>> path = r"Software-Dev-ePortfolio/code-review.md"

@@ -178,54 +178,62 @@ p {
     text-shadow: 0 0 5px #ccff00; /* Glow for inline code */
 }
 
-/* ==== Retro Terminal Frame === */
-
-.terminal-frame {
-  border: 2px solid #999;
-  border-radius: 4px;
-  background-color: #ccc;
-  width: 100%;
-  max-width: 750px;
-  margin: 30px auto;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  font-family: 'Segoe UI', sans-serif;
+/* Retro terminal container styling */
+.terminal-container {
+  background-color: #c0c0c0; /* Retro Windows gray */
+  border: 2px solid #808080;
+  box-shadow: inset -1px -1px 0 #ffffff, inset 1px 1px 0 #000000;
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 900px;
+  font-family: 'Share Tech Mono', monospace;
 }
 
+/* Retro title bar */
 .terminal-titlebar {
-  background-color: #e0e0e0;
+  background-color: #000080; /* Classic blue */
+  color: #ffffff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 6px 10px;
-  border-bottom: 2px solid #999;
-  font-size: 14px;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
   font-weight: bold;
-  color: #000;
+  text-shadow: 1px 1px #000;
 }
 
+/* Title text left-aligned */
 .terminal-title {
-  font-family: 'Segoe UI', sans-serif;
+  flex: 1;
+  text-align: left;
 }
 
+/* Retro buttons (right corner) */
 .terminal-buttons {
   display: flex;
-  gap: 5px;
+  gap: 4px;
 }
 
-.terminal-buttons .btn {
-  width: 16px;
-  height: 16px;
-  background-color: #999;
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
+.terminal-btn {
+  width: 18px;
+  height: 18px;
+  background-color: #c0c0c0;
+  border: 2px outset #ffffff;
+  color: #000;
+  font-size: 0.75rem;
   text-align: center;
-  line-height: 16px;
-  border: 1px solid #555;
-  cursor: default;
+  line-height: 14px;
+  font-weight: bold;
+  font-family: monospace;
 }
 
-.terminal-buttons .btn:hover {
-  background-color: #777;
+/* Link styling for page titles inside terminal window */
+.terminal-title a.terminal-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.terminal-title a.terminal-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

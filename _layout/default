@@ -1,54 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="preload" href="{{ '/assets/fonts/ShareTechMono-Regular.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" href="{{ '/assets/fonts/256Bytes.otf' | relative_url }}" as="font" type="font/otf" crossorigin="anonymous">
-  </head>
-  <body>
-    <header class="site-header">
-      <h1 class="page-title">{{ site.title }}</h1>
-      <h2 class="page-subtitle">{{ site.description }}</h2>
-    </header>
-
-    <section class="terminal-links">
-      <div class="terminal-card">
-        <a href="/" class="terminal-link">$ python start.py</a>
-      </div>
-      <div class="terminal-card">
-        <a href="/review/" class="terminal-link">$ c++ review_code.cpp</a>
-      </div>
-      <div class="terminal-card">
-        <a href="/artifacts/" class="terminal-link">Artifacts.java</a>
-      </div>
-      <div class="terminal-card">
-        <a href="/narratives/" class="terminal-link">$ sql SELECT * FROM narratives;</a>
-      </div>
-      <div class="terminal-card">
-        <a href="/self-assessment/" class="terminal-link">$ python self_assess.py</a>
-      </div>
-      <div class="terminal-card">
-        <a href="/contact/" class="terminal-link">$ echo 'Contact me'</a>
-      </div>
-    </section>
-
-    <main class="container">
-      {{ content }}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - Software Development ePortfolio</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        @font-face {
+            font-family: 'Share Tech Mono';
+            src: url('/assets/fonts/ShareTechMono-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: '256 Bytes';
+            src: url('/assets/fonts/256Bytes.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        {{ content }}
     </main>
-
-    <footer class="site-footer">
-      <div class="footer-container">
-        <p>&copy; {{ site.time | date: "%Y" }} Alysha Pursley</p>
-        <p>All rights reserved.</p>
-        <p>
-          <a href="mailto:alysha.pursley@snhu.edu">alysha.pursley@snhu.edu</a> |
-          <a href="https://github.com/apursley2012" target="_blank">GitHub</a> |
-          <a href="/resume/">Resume</a>
-        </p>
-      </div>
-    </footer>
-  </body>
+</body>
 </html>

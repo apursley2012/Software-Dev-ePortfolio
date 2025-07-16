@@ -17,7 +17,7 @@ main {
 
 h1, h2, h3 {
   color: #ccff00;
-  font-family: 'PixelGame', monospace;
+  fontface-family: 'NanoPix', monospace;
   text-align: center;
   /* Enhanced glow for headers */
   text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
@@ -25,14 +25,29 @@ h1, h2, h3 {
 }
 
 h1 {
+    fontface-family: 'NanoPix', monospace;
+    text-align: center;
+    /* Enhanced glow for headers */
+    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
+    margin-bottom: 1.5rem;
     font-size: 3.5rem;
 }
 
 h2 {
+    fontface-family: 'NanoPix', monospace;
+    text-align: left;
+    /* Enhanced glow for headers */
+    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
+    margin-bottom: 1.5rem;
     font-size: 2.5rem;
 }
 
 h3 {
+    fontface-family: 'NanoPix', monospace;
+    text-align: left;
+    /* Enhanced glow for headers */
+    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
+    margin-bottom: 1.5rem;
     font-size: 1.8rem;
 }
 

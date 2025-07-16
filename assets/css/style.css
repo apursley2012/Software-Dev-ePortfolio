@@ -16,42 +16,24 @@ main {
 }
 
 h1, h2, h3 {
-    color: #ccff00;
-    font-family: 'NanoPixel', monospace;
-    text-align: center;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
+  color: #ccff00;
+  font-family: '256 Bytes', monospace;
+  text-align: center;
+  /* Enhanced glow for headers */
+  text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
+  margin-bottom: 1.5rem;
 }
 
 h1 {
     font-size: 3.5rem;
-    color: #ccff00;
-    font-family: 'NanoPixel', monospace;
-    text-align: center;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
 }
 
 h2 {
     font-size: 2.5rem;
-    color: #ccff00;
-    font-family: 'NanoPixel', monospace;
-    text-align: center;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
 }
 
 h3 {
     font-size: 1.8rem;
-    color: #ccff00;
-    font-family: 'NanoPixel', monospace;
-    text-align: center;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
 }
 
 p {
@@ -74,11 +56,7 @@ p {
   margin: 1.5rem auto; /* Reduced margin for closer grouping */
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 255, 136, 0.5); /* Softened glow for subtlety */
-  text-align: left;
-  display: inline-block;
-  width: fit-content;
-  max-width: 100%;
-  cursor: pointer;
+  max-width: 900px;
   cursor: pointer; /* Indicate interactivity */
   transition: all 0.2s ease-in-out; /* Smooth transition for hover effect */
 }
@@ -87,17 +65,7 @@ p {
     box-shadow: 0 0 25px rgba(0, 255, 136, 0.8); /* Enhanced glow on hover */
     transform: translateY(-3px); /* Slight lift on hover */
 }
-.terminal-header {
-  background-color: #1c1c1c;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: 'Share Tech Mono', monospace;
-  color: #00ff00;
-  font-size: 0.9rem;
-  border-bottom: 1px solid #444;
-}
+
 .terminal-window code {
   display: block;
   background: none;
@@ -106,9 +74,7 @@ p {
   font-family: 'Share Tech Mono', monospace;
   font-size: 1rem;
   line-height: 1.4;
-  tab-size: 4; /* Ensure consistent tab spacing 
-*/
-
+  tab-size: 4; /* Ensure consistent tab spacing */
   /* Added glow for terminal code text */
   text-shadow: 0 0 5px #ccff00, 0 0 10px #ccff00;
 }
@@ -181,91 +147,4 @@ p {
     padding: 0.2em 0.4em;
     border-radius: 3px;
     text-shadow: 0 0 5px #ccff00; /* Glow for inline code */
-}
-
-}
-.terminal-container {
-  background-color: #d4d0c8; /* Classic Windows grey */
-  border: 2px solid #000;
-  box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #ffffff;
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0;
-  font-family: 'Share Tech Mono', monospace;
-  width: fit-content;
-  max-width: 100%;
-  display: inline-block;
-}
-
-.terminal-header {
-  background-color: #c0c0c0;
-  color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.3rem 0.5rem;
-  font-size: 0.9rem;
-  border-bottom: 2px solid #808080;
-}
-
-.terminal-title {
-  font-weight: bold;
-}
-
-.terminal-buttons {
-  display: flex;
-  gap: 4px;
-}
-
-.terminal-buttons .button {
-  background: #d4d0c8;
-  border: 2px solid #808080;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  box-shadow: inset -1px -1px 0 #ffffff, inset 1px 1px 0 #404040;
-}
-
-.window-terminal {
-  background-color: #0a0a0a;
-  color: #ccff00;
-  font-family: 'Share Tech Mono', monospace;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  white-space: pre-wrap;
-  border-top: 2px solid #444;
-  border-bottom: 2px solid #444;
-  width: fit-content;
-  max-width: 100%;
-  display: inline-block;
-  text-align: left;
-}
-
-
-.window-terminal a {
-  color: #00ffff;
-  text-decoration: none;
-}
-
-.window-terminal a:hover {
-  text-decoration: underline;
-}
-
-.cursor {
-  display: inline-block;
-  width: 8px;
-  height: 1em;
-  background-color: #ccff00;
-  animation: blink 1s steps(2, start) infinite;
-  margin-left: 3px;
-}
-
-@keyframes blink {
-  to {
-    visibility: hidden;
-  }
 }

@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="icon" href="/assets/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - Software Development ePortfolio</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        @font-face {
+            font-family: 'Share Tech Mono';
+            src: url('/assets/fonts/ShareTechMono-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: '256 Bytes';
+            src: url('/assets/fonts/256Bytes.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
     <script>
 		document.addEventListener("DOMContentLoaded", function () {
@@ -28,21 +41,8 @@
 		});
 	</script>
 <body>
-
-  <div class="wrapper">
-    <div class="toolbar">
-      <div class="window-title">Fallout</div>
-      <div class="window-controls">
-        <div class="btn">⨯</div>
-        <div class="btn">☐</div>
-        <div class="btn">—</div>
-      </div>
-    </div>
-
     <main>
-      {{ content }}
+        {{ content }}
     </main>
-  </div>
-
 </body>
 </html>

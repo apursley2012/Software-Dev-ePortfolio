@@ -21,6 +21,21 @@
     </style>
 </head>
 <body>
+    <script>
+  const text = "Welcome to My Software Development ePortfolio";
+  const element = document.getElementById("typed-welcome");
+  let index = 0;
+
+  function typeText() {
+    if (index < text.length) {
+      element.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeText, 50); // typing speed (ms per letter)
+    }
+  }
+
+  window.onload = typeText;
+</script>
     <main>
         {{ content }}
     </main>
